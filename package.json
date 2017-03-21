@@ -1,0 +1,16 @@
+{
+  "name": "try-to-koa",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "koa-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-router": "^5.4.0"
+  }
+}
