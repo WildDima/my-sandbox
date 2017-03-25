@@ -1,0 +1,29 @@
+{
+  "products" : {
+    "1" : {
+      "name": "lorem1"
+    },
+    "2" : {
+      "name": "ipsum2"
+    },
+    "3" : {
+      "name": "dolor3"
+    }
+  },
+  "companies" : {
+    "1": {
+      "name": "compname1"
+    },
+    "42": {
+      "name": "compname29"
+    }
+  },
+  "orders" : {
+    "1" : {
+      "email" : "lorem@lorem.com",
+      "product_ids" : ["1", "2"],
+      "info" : "Maecenas ut neque enim. Quisque varius mi condimentum velit porta.",
+      "status" : "done"
+    }
+  }
+}
