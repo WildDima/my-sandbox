@@ -1,7 +1,6 @@
 let router = require('../../middlewares/router')
-let koaBody = require('koa-body')();
 
-router.post('/orders', koaBody, function *(next) {
+router.post('/orders', function *(next) {
   this.response.status = 200
   this.response.body = {
     "email": this.request.body.email,
