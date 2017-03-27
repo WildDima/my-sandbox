@@ -1,8 +1,16 @@
 let router = require('../../middlewares/router')
-const db = require('../../db')
+let db = require('../../db')
 
 router.del('/products/:id', function *(next) {
-  this.response.status = 200
-  this.response.body = db.companies[this.params.id] || { error: 404 }
+  if(!!db.products[this.params.id]) {
+    if(delete(db.products[this.params.id])) {
+      this.response.status = 204
+    } else {
+      this.response.status = 500
+    }
+  } else {
+    this.response.status = 404
+  }
+
   yield next
 })

@@ -1,7 +1,7 @@
 let router = require('../../middlewares/router')
 
 router.post('/orders', function *(next) {
-  this.response.status = 200
+  this.response.status = 201
   this.response.body = {
     "email": this.request.body.email,
     "product_ids" : [
