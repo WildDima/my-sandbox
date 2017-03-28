@@ -2,7 +2,7 @@ let router = require('../../middlewares/router')
 const db = require('../../db')
 
 router.patch('/orders/:id', function *(next) {
-  if(!!db.orders[this.params.id]) {
+  if(this.params.id in db.orders) {
     db.orders[this.params.id] = this.request.body
     let order = db.orders[this.params.id]
 
